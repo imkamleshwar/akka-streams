@@ -23,6 +23,7 @@ object MoreOpenGraphs extends App {
 
     max1.out ~> max2.in0
 
+    // this is called uniform as the these receive the element of the same type
     UniformFanInShape(max2.out, max1.in0, max1.in1, max2.in1)
   }
 
